@@ -1,0 +1,18 @@
+#inputEmail, #inputPassword{
+    text-align: center;
+    border-color: cyan;
+    border-style: solid;
+}
+
+.container{
+    height: 100vh;
+
+}
+
+.signCol{
+    margin-top: 5%;
+    /* height: 100vh;
+    align-items: center;
+    justify-content: center; */
+}
+

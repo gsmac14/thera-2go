@@ -1,0 +1,24 @@
+.container{
+    height: 100vh;
+}
+
+#inputUsername{
+    text-align: center;
+    border-color: cyan;
+}
+
+.body{
+    background-color: cornflowerblue;
+}
+
+.header{
+    background-color: lightblue;
+    font-size: larger;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.sub{
+    background-color: lightblue;
+    color: black;
+}

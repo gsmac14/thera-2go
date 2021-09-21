@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "./style.css";
+import "./card.css";
 import API from "../../utils/API";
 import CardSigup from "../CardSignup";
 
@@ -29,42 +29,40 @@ function CardLogin() {
     }
   }
   return (
-    <div className="container-fluid">
-       <div className="row">
-         <div className="col-md-6 logCol">
-
-      <div className="card text-center">
-        <div className="card-header header">Login</div>
-        <div className="card-body body">
-          <form>
-            <div className="form-group">
-              <input
-                type="text"
-                className="form-control"
-                id="inputEmail"
-                placeholder="Email"
-              ></input>
+    <div className="container d-flex align-items-center justify-content-center">
+      <div className="row ">
+        <div className="col-md-6">
+          <div className="card text-center">
+            <div className="card-header header">Login</div>
+            <div className="card-body body">
+              <form>
+                <div className="form-group">
+                  <input
+                    type="text"
+                    className="form-control"
+                    id="inputEmail"
+                    placeholder="Email"
+                  ></input>
+                </div>
+                <div className="form-group">
+                  <input
+                    type="text"
+                    className="form-control"
+                    id="inputPassword"
+                    placeholder="Password"
+                  ></input>
+                </div>
+                <button type="submit" className="btn btn-primary sub">
+                  Submit
+                </button>
+              </form>
             </div>
-            <div className="form-group">
-              <input
-                type="text"
-                className="form-control"
-                id="inputPassword"
-                placeholder="Password"
-              ></input>
-            </div>
-            <button type="submit" className="btn btn-primary sub">
-              Submit
-            </button>
-          </form>
+          </div>
         </div>
+        <div className="col-md-6">
+          <CardSigup />
         </div>
-         </div>
-         <div className="col-md-6 signCol">
-            <CardSigup/>
-         </div>
-       </div>
-
+      </div>
     </div>
   );
 }

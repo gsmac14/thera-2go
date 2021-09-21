@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "./style.css";
+import "./sign.css";
 import API from "../../utils/API";
 
 function CardSigup() {
@@ -30,27 +30,32 @@ function CardSigup() {
   }
 
   return (
-    <div className="container-fluid">
-      
+    <div>
+     
+
       <div className="card text-center">
         <div className="card-header header">Signup</div>
-        <div className="card-body body">
+        <div className="card-body body ">
           <form>
-            <div className="form-group">
+            <div className="form-group form-row input-group-sm">
+              <div className="col">
               <input
                 type="text"
-                className="form-control"
+                className="form-control "
                 id="inputUsername"
                 placeholder="Username"
               ></input>
-            </div>
-            <div className="form-group">
+
+              </div>
+              <div className="col">
+
               <input
                 type="text"
                 className="form-control"
                 id="inputEmail"
                 placeholder="Email"
               ></input>
+              </div>
             </div>
             <div className="form-group">
               <input
