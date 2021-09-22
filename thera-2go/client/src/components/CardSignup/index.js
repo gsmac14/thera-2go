@@ -35,12 +35,12 @@ function CardSigup() {
 
       <div className="card text-center">
         <div className="card-header header">Signup</div>
-        <div className="card-body body ">
+        <div className="card-body body">
           <form>
             <div className="form-group form-row input-group-sm">
               <div className="col">
               <input
-                type="text"
+                type="user"
                 className="form-control "
                 id="inputUsername"
                 placeholder="Username"

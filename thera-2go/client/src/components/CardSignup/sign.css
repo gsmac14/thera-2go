@@ -5,7 +5,10 @@
 #inputUsername{
     text-align: center;
     border-color: cyan;
+    transition: .25s;
 }
+
+
 
 .body{
     background-color: cornflowerblue;
@@ -21,4 +24,9 @@
 .sub{
     background-color: lightblue;
     color: black;
+}
+
+.card{
+    border: none;
+    box-shadow: 10px 10px 5px;
 }
