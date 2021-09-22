@@ -10,6 +10,12 @@ export default{
     //creates a new account for a user 
     createUser: function(userData){
         return axios.post("/api/auth/register", userData);
+    },
+
+    //Retrieves exercises and accepts a query or term to search the exercise api 
+    getImage: function(query){
+        return axios.post("/api/images", { params: {q: query} });
     }
 
 }
+

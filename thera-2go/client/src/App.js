@@ -1,11 +1,11 @@
-import React from "react";
-
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import CardLogin from "./components/CardLogin";
 import "./App.css";
-import Grid from "./components/Grid";
+import UserPage from "./components/UserPage";
 
 function App() {
+
+  
   return (
     <Router>
       <div className= "App">
@@ -13,8 +13,8 @@ function App() {
           <Route exact path="/">
             <CardLogin />
           </Route>
-          <Route exact path="Grid">
-            <Grid/>
+          <Route exact path="/userPage">
+            <UserPage />
           </Route>
         </Switch>
       </div>

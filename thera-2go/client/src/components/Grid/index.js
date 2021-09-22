@@ -1,16 +1,29 @@
 import React from "react";
 
-function Grid() {
+//Exporting the Container, Row, and Col components from this file
+
+// This Container component allows us to use a bootstrap container without worrying about class names
+export function Container({ fluid, children }) {
+  return <div className={`container${fluid ? "-fluid" : ""}`}>{children}</div>;
+}
+
+// This Row component lets us use a bootstrap row without having to think about class names
+export function Row({ fluid, children }) {
+  return <div className={`row${fluid ? "-fluid" : ""}`}>{children}</div>;
+}
+
+// This Col component lets us size bootstrap columns with less syntax
+export function Col({ size, children }) {
   return (
-    <div className="container">
-      <div className="row row-cols-2">
-        <div className="col">Column</div>
-        <div className="col">Column</div>
-        <div className="col">Column</div>
-        <div className="col">Column</div>
-      </div>
+    <div
+      className={size
+        .split(" ")
+        .map(size => "col-" + size)
+        .join(" ")}
+    >
+      {children}
     </div>
   );
 }
 
-export default Grid;
+
